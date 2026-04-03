@@ -14,9 +14,12 @@ const teamSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  // logo: {
-  //   type: String,
-  // },
+  logo: {
+    type: String,
+  },
+  wordmark: {
+    type: String,
+  },
   championships: {
     type: [Number],
   },

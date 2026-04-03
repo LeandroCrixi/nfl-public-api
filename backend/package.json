@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "seed": "node src/scripts/seed.js"
+    "seed": "node src/scripts/seed.js",
+    "download:images": "node src/scripts/downloadImages.js"
   },
   "dependencies": {
     "cors": "^2.8.6",
