@@ -10,6 +10,7 @@ const startServer = async () => {
 
   app.listen(PORT, () => {
     console.log(`🚀 Server running on port ${PORT}`);
+    console.log('http://localhost:3000/api/v1/teams')
   });
 };
 

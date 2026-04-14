@@ -1,0 +1,7 @@
+node_modules/
+.env
+files/
+dist/
+build/
+.vite/
+.DS_Store
