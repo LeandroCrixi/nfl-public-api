@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(errorHandler);
 app.use("/api/v1/teams", teamsRoutes);
 app.use("/api/v1/stadiums", stadiumsRoutes);
+app.use("/images", express.static("public/images"));
 
 app.get("/", (req, res) => {
   res.json({ message: "NFL Public API running" });

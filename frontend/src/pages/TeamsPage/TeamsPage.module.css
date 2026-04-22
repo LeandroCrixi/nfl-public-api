@@ -1,0 +1,25 @@
+.heroSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    & img{
+        width: 250px;
+    }
+    & h1{
+        font: var(--font-h1);
+    }
+    & h6{
+        font: var(--font-h6);
+        padding: 10px 200px;
+        text-align: center;
+    }
+}
+
+.teamCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+    justify-items: center;
+}
