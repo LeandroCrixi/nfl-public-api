@@ -33,8 +33,8 @@ const TeamCard = ({
         <h2>{city} {name}</h2>
         <span>{city}, {state}</span>
         <span>Est. {founded}</span>
-        <p>Championships: {championships}</p>
-        <p>{stadium}</p>
+        <p className={style.highlightBorder}>Championships: {championships}</p>
+        <p >{stadium}</p>
         <span>{capacity} capacity</span>
        
       </div>

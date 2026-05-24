@@ -10,10 +10,24 @@
 
   --cultured: #F4F8F8;
 
-    /* Base colors */
-  --b1: #f8f6fa;
-  --b2: #1a1a1a;
+  /* Base colors */
+  --b1: #F8F6FA;
+  --b2: #1A1A1A;
   --b3: #2F2F2F;
   --b4: #575757;
-  --b5: #FBC02D;
+  --b5: #FBB02D;
+
+  /* ✅ Base Colors */
+  --background: #0B0F1A;
+  --card: #111827;
+  --corder: #1F2937;
+
+  /* ✅ Text Colors */
+  --primary-text: #FFFFFF;
+  --secondary: #9CA3AF;
+  --highlight: #FBBF24;
+
+  /* ✅ Conference Badge */
+  --afc: #DC2626;
+  --nfc: #2563EB;
 }

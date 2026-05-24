@@ -26,9 +26,9 @@ const TeamsPage = () => {
   if (isLoading) return <p>Loading...</p>;
 
   return (
-    <section>
+    <section className={`${style.heroSection}`}>
       {/* <img src="../../src/assets/National_Football_League_logo.svg" alt="NFL" /> */}
-      <div className={`${style.heroSection}`}>
+      <div className={`${style.heroHeader}`}>
         <img src={nflLogo} alt="NFL Logo" />
         <h1>The NFL Teams API</h1>
         <h6>Browse NFL teams, stadiums, and conference data. A modern full-stack application powered by React, Express, and MongoDB.</h6>

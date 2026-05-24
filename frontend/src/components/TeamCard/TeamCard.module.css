@@ -2,8 +2,9 @@
   background-color: yellowgreen;
   text-align: left;
   border-radius: 20px;
-  background-color:var(--b4);
-  border: 2px solid black;
+  background-color: var(--card);
+  border: 2px solid var(--b4);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   width: 340px;
   cursor: pointer;
 
@@ -26,18 +27,18 @@
     padding: 20px;
     border-radius: 20px 20px 0px 0px;
     position: relative;
-    & .conference{
-        position: absolute;
-        left: 250px;
-        top: 10px;
-        background: blue;
-        padding: 1px 20px;
-        border-radius: 10px;
-        font-weight: bold;
-        color: white;
+    & .conference {
+      position: absolute;
+      left: 250px;
+      top: 10px;
+      background: blue;
+      padding: 1px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      color: white;
     }
-    & .afc{
-        background-color: red;
+    & .afc {
+      background-color: red;
     }
   }
 
@@ -49,15 +50,44 @@
     & h2 {
       font: var(--font-h6);
       font-weight: 800;
-      color: var(--b5);
+      color: var(--primary-text);
     }
     & p {
       font: var(--font-p1);
       font-weight: 700;
-      color: var(--b5);
+      color: var(--primary-text);
     }
-    & span{
-        color: white;
+    & span {
+      color: var(--highlight);
     }
+
+    & .highlightBorder {
+      border-top: 1px solid var(--secondary);
+      border-bottom: 1px solid var(--secondary);
+      padding: 10px 0px;
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .teamCard {
+    width: 320px;
+    & .logo {
+      width: 220px;
+      height: 220px;
+    }
+
+    & .teamCardTop {
+      & .conference {
+        left: 230px;
+        top: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 830px){
+  .teamCard{
+    
   }
 }
