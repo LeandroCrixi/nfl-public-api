@@ -27,10 +27,10 @@
   }
 }
 
-.btn-primary {
-  background: var(--mist-gray);
+.btnPrimary {
+  background: var(--nfc);
   margin-right: 40px;
-  color: var(--rich-navy);
+  color: var(--afc);
 }
 
 .btn-secondary {

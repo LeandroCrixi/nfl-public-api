@@ -20,7 +20,7 @@
   /* ✅ Base Colors */
   --background: #0B0F1A;
   --card: #111827;
-  --corder: #1F2937;
+  --border: #1F2937;
 
   /* ✅ Text Colors */
   --primary-text: #FFFFFF;
@@ -28,6 +28,6 @@
   --highlight: #FBBF24;
 
   /* ✅ Conference Badge */
-  --afc: #DC2626;
-  --nfc: #2563EB;
+  --afc: #D60A0A;
+  --nfc: #013369;
 }

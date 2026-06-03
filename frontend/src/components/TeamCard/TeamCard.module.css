@@ -31,14 +31,14 @@
       position: absolute;
       left: 250px;
       top: 10px;
-      background: blue;
+      background: var(--nfc);
       padding: 1px 20px;
       border-radius: 10px;
       font-weight: bold;
       color: white;
     }
     & .afc {
-      background-color: red;
+      background-color: var(--afc);
     }
   }
 
