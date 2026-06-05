@@ -1,0 +1,57 @@
+footer {
+  background: var(--background);
+  padding: 40px;
+  justify-content: center;
+  text-align: center;
+  & ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  & div {
+    border-bottom: 1px solid var(--secondary);
+    width: 500px;
+    justify-self: center;
+    margin: 20px;
+  }
+  & li,
+  p {
+    font: var(--font-p2);
+    color: var(--secondary);
+    font-weight: 600;
+
+    & img {
+      width: 100px;
+    }
+
+    & span:hover {
+      color: var(--highlight);
+    }
+  }
+  & .netlify {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    padding: 10px 0px;
+  }
+
+  & .social {
+    gap: 40px;
+    & img {
+      width: 40px;
+      margin: 20px 0px;
+    }
+  }
+
+  & .author {
+    & a {
+      border-bottom: 1px solid var(--afc);
+      &:hover {
+        color: var(--highlight);
+      }
+    }
+  }
+}

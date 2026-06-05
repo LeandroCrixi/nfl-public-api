@@ -1,22 +1,4 @@
 :root {
-  /* Brand Colors from Flyers*/
-  --deep-purple: #4B2C5E;
-  --soft-mist: #DADBDD;
-  --dusty-rose: #C9A3A7;
-  --rich-navy: #2D3E52;
-  --ivory: #F8F6F2;
-  --golden-beige: #E2C89A;
-  --mist-gray: #DBDBDB;
-
-  --cultured: #F4F8F8;
-
-  /* Base colors */
-  --b1: #F8F6FA;
-  --b2: #1A1A1A;
-  --b3: #2F2F2F;
-  --b4: #575757;
-  --b5: #FBB02D;
-
   /* ✅ Base Colors */
   --background: #0B0F1A;
   --card: #111827;

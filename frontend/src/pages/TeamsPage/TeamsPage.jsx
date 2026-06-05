@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import style from './TeamsPage.module.css'
-import components from '../../styles/components/components.module.css'
+import style from "./TeamsPage.module.css";
+import components from "../../styles/components/components.module.css";
 import nflLogo from "../../assets/National_Football_League_logo.svg";
 import TeamCard from "../../components/TeamCard/TeamCard";
 
@@ -31,7 +31,10 @@ const TeamsPage = () => {
       <div className={`${style.heroHeader}`}>
         <img src={nflLogo} alt="NFL Logo" />
         <h1>The NFL Teams API</h1>
-        <h6>Browse NFL teams, stadiums, and conference data. A modern full-stack application powered by React, Express, and MongoDB.</h6>
+        <h6>
+          Browse NFL teams, stadiums, and conference data. A modern full-stack
+          application powered by React, Express, and MongoDB.
+        </h6>
       </div>
       <div className={`${style.teamCards} ${components.container}`}>
         {teams.map((team) => {
@@ -47,8 +50,13 @@ const TeamsPage = () => {
               logo={team.logo}
               wordmark={team.wordmark}
               championships={team.championships.length}
+              last={
+                team.championships.length
+                  ? team.championships[team.championships.length - 1]
+                  : 0
+              }
               stadium={team.stadium.name}
-              capacity={team.stadium.capacity.toLocaleString('en-US')}
+              capacity={team.stadium.capacity.toLocaleString("en-US")}
               conference={team.conference.abbreviation}
             />
           );

@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./TeamCard.module.css";
 
 const TeamCard = ({
@@ -10,6 +9,7 @@ const TeamCard = ({
   logo,
   wordmark,
   championships,
+  last,
   stadium,
   capacity,
   conference,
@@ -17,7 +17,7 @@ const TeamCard = ({
   return (
     <div key={id} className={`${style.teamCard}`}>
       <div className={style.teamCardTop}>
-         <p className={`${style.conference} ${conference === 'NFC' ? style.nfc : style.afc}`}>{conference}</p>
+        <p className={`${style.conference} ${conference === "NFC" ? style.nfc : style.afc}`}>{conference}</p>
         <img
           className={`${style.logo}`}
           src={`http://localhost:3000${logo}`}
@@ -30,13 +30,19 @@ const TeamCard = ({
         />
       </div>
       <div className={style.teamCardBotton}>
-        <h2>{city} {name}</h2>
-        <span>{city}, {state}</span>
+        <h2>
+          {city} {name}
+        </h2>
+        <span>
+          {city}, {state}
+        </span>
         <span>Est. {founded}</span>
-        <p className={style.highlightBorder}>Championships: {championships}</p>
-        <p >{stadium}</p>
+        <div className={style.highlightBorder}>
+          <p>Championships: {championships}</p>
+          <span>Last Championship: {last}</span>
+        </div>
+        <p>{stadium}</p>
         <span>{capacity} capacity</span>
-       
       </div>
     </div>
   );
