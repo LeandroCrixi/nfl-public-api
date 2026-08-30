@@ -1,6 +1,6 @@
 .heroSection {
   padding: 40px 0px;
-  background-color: #F4F8F8;
+  background-color: #f4f8f8;
   & .heroHeader {
     display: flex;
     flex-direction: column;
@@ -27,26 +27,47 @@
   }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1366px) {
   .heroSection {
-    & .teamCards{
+    & .teamCards {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
 }
 
-@media (max-width: 830px){
-  .heroSection{
-    & .teamCards{
+@media (max-width: 956px) {
+  .heroSection {
+    & .teamCards {
       grid-template-columns: 1fr 1fr;
     }
   }
 }
 
-@media (max-width: 430px){
-  .heroSection{
-    & .teamCards{
+@media (max-width: 932px) {
+  .heroSection {
+    & .heroHeader {
+      & h1 {
+        text-align: center;
+      }
+      & h6 {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .heroSection {
+    & .teamCards {
       grid-template-columns: 1fr;
+    }
+    & .heroHeader {
+      & h1 {
+        padding: 20px;
+      }
+      & h6 {
+        padding: 20px 40px;
+      }
     }
   }
 }

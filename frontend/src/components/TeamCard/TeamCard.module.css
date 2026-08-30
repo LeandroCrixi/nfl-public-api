@@ -4,7 +4,7 @@
   border-radius: 20px;
   background-color: var(--card);
   border: 2px solid var(--b4);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   width: 340px;
   cursor: pointer;
 
@@ -27,6 +27,9 @@
     padding: 20px;
     border-radius: 20px 20px 0px 0px;
     position: relative;
+    & img {
+      margin: 0 auto;
+    }
     & .conference {
       position: absolute;
       left: 250px;
@@ -86,8 +89,7 @@
   }
 }
 
-@media (max-width: 830px){
-  .teamCard{
-    
+@media (max-width: 830px) {
+  .teamCard {
   }
 }
