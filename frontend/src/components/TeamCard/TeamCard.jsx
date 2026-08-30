@@ -20,7 +20,8 @@ const TeamCard = ({
         <p className={`${style.conference} ${conference === "NFC" ? style.nfc : style.afc}`}>{conference}</p>
         <img
           className={`${style.logo}`}
-          src={`http://localhost:3000${logo}`}
+          src={`${import.meta.env.VITE_API_URL}${logo}`}
+          // src={`http://localhost:3000${logo}`}
           alt={`${name} logo`}
         />
         <img
