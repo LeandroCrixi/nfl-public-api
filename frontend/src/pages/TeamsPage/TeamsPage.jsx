@@ -11,7 +11,8 @@ const TeamsPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/v1/teams");
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/teams`);
+        // const res = await fetch("http://localhost:3000/api/v1/teams");
         const json = await res.json();
         setTeams(json);
       } catch (error) {
