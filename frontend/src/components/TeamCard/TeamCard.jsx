@@ -26,7 +26,7 @@ const TeamCard = ({
         />
         <img
           className={`${style.wordmark}`}
-          src={`http://localhost:3000${wordmark}`}
+          src={`${import.meta.env.VITE_API_URL}${wordmark}`}
           alt={`${name} wordmark`}
         />
       </div>
